@@ -1,0 +1,31 @@
+{
+  "name": "generate-ts-clients",
+  "version": "1.0.0",
+  "description": "A package to generate API clients from OpenAPI specifications. It uses the @hey-api/openapi-ts package.",
+  "main": "index.js",
+  "scripts": {
+    "run": "node generate-clients.js",
+    "test": "jest"
+  },
+  "bin": {
+    "generate-openapi-ts-clients": "./generate-clients.js"
+  },
+  "dependencies": {
+    "@hey-api/openapi-ts": "^0.64.13",
+    "child-process": "^1.0.2",
+    "fs": "^0.0.1-security",
+    "js-yaml": "^4.1.0"
+  },
+  "author": "Marco Espinosa",
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Marco Espinosa",
+      "email": "marco@marcoespinosa.com",
+      "url": "https://github.com/maekind"
+    }
+  ],
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
