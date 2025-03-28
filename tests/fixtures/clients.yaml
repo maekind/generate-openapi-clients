@@ -1,0 +1,8 @@
+delphos:
+  input: '${DELPHOS_OPENAPI_URL}'
+  output: 'src/clients/delphos'
+  schemas: true
+majesty:
+  input: 'https://backend.dev01.apmc.io/majesty/openapi.json'
+  output: 'src/clients/majesty'
+  schemas: true
