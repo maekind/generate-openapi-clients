@@ -115,8 +115,8 @@ These arguments help customize the execution based on specific needs.
 
 A big thank you to everyone who contributed to this project! 💖
 
-<a href="https://github.com/maekind/generate-ts-clients/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=maekind/generate-ts-clients" alt="Contributors" />
+<a href="https://github.com/maekind/generate-openapi-clients/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=maekind/generate-openapi-clients" alt="Contributors" />
 </a>
 
 ---
