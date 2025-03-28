@@ -10,7 +10,7 @@
     "format": "prettier --write ."
   },
   "bin": {
-    "generate-openapi-ts-clients": "./generate-clients.js"
+    "generate-openapi-ts-clients": "generate-clients.js"
   },
   "dependencies": {
     "@hey-api/openapi-ts": "^0.64.13",
