@@ -1,0 +1,47 @@
+name: Publish ✨ Package 📦 to NPM
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          # Fetch all history for all branches and tags to ensure version bump works
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Specify the Node.js version you want to use
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm test
+
+      - name: Configure Git user
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+        shell: bash
+
+      - name: Bump version and publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          npm version minor -m "Bump version to %s 🔼 [skip ci]"
+          npm publish
+
+      - name: Push changes
+        run: |
+          git push origin HEAD
