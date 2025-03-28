@@ -43,5 +43,7 @@ jobs:
           npm publish
 
       - name: Push changes
+        env:
+            GITHUB_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           git push origin HEAD
