@@ -1,6 +1,6 @@
 {
   "name": "generate-openapi-ts-clients",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A package to generate API clients from OpenAPI specifications. It uses the @hey-api/openapi-ts package.",
   "main": "index.js",
   "scripts": {
