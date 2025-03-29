@@ -1,3 +1,17 @@
+<!-- Shields -->
+<p align="center">
+<a href="https://github.com/maekind/generate-openapi-clients/actions/workflows/ci.yaml"><img src="https://img.shields.io/github/actions/workflow/status/maekind/generate-openapi-clients/ci.yaml?label=Tests 🧪" hspace="5" vspace="2"></a>
+<a href="https://github.com/maekind/generate-openapi-clients/actions/workflows/publish.yaml"><img src="https://img.shields.io/github/actions/workflow/status/maekind/generate-openapi-clients/publish.yaml?label=Publish ✨" hspace="5" vspace="2"></a>
+<a href="https://www.npmjs.com/package/generate-openapi-ts-clients"><img src="https://img.shields.io/npm/v/generate-openapi-ts-clients?color=blue&label=npm" hspace="5" vspace="2"></a>
+<br>  
+<a href="https://github.com/maekind/generate-openapi-clients"><img src="https://img.shields.io/github/last-commit/maekind/generate-openapi-clients?color=black&label=last commit ⏳" hspace="5" vspace="2"></a>
+<br>
+<a href="https://github.com/maekind/generate-openapi-clients/stargazers"><img src="https://img.shields.io/github/stars/maekind/generate-openapi-clients?label=starts ⭐" hspace="5" vspace="2"></a>
+<a href="https://www.npmjs.com/package/generate-openapi-ts-clients"><img src="https://img.shields.io/npm/dm/generate-openapi-ts-clients?label=downloads&color=yellow" hspace="5" vspace="2"></a>
+<br>
+<a href="https://ko-fi.com/maekind"><img src="https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg?label=buy me a coffee" hspace="5" vspace="2"></a>
+</p>
+
 # 🚀 Generate TypeScript Clients from OpenAPI
 
 ## 📜 Description
