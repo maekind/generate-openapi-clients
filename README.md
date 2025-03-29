@@ -74,7 +74,7 @@ If the `client` value is not provided, the default value is `fetch`.
 Once installed, you can run the client generation with the following command:
 
 ```bash
-generate-openapi-ts-clients -c/--config config.yaml
+npx generate-openapi-ts-clients -c/--config config.yaml
 ```
 
 This will:
@@ -83,12 +83,6 @@ This will:
 2. Create the `openapi-ts.config.js` file for each client. 📁
 3. Run the OpenAPI generator for each client. 🔄
 4. Clean up the temporary config files after generating the clients. 🧹
-
-You can also run the script without installation using `npx`:
-
-```bash
-npx generate-openapi-ts-clients -c/--config config.yaml
-```
 
 ### 🎯 Running with Arguments
 
