@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+// This script generates API clients based on OpenAPI specifications.
 const { execSync } = require('child_process');
 const fs = require('fs');
 const yaml = require('js-yaml');
